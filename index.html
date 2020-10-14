@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Test technique</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+    <div class="container-alert">
+        <div class="alert">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+            <p><b>Interface photo vous permet d'assurer :</b> </p>
+            <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> La prise d'une photo par la caméra de votre ordinateur (en choisissant le mode souhaité).</p>
+            <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> La suppression et l'affichage avec la taille originale de l'image prise.</p>
+        </div>
+    </div>
+
+  
+
+    <div class="container-page">
+            <div>[facingMode =  <span id="facingMode">environment</span>]</div>
+            <div class="container-video">
+                <video id="sourcevid" class="video-live" autoplay="true" ></video>
+            </div>
+ 
+            <div class="cam-icons">
+                <img src="img/cam.png" onclick='photo()'>
+                <img src="img/turn-cam.png" onclick='switch_cam()'>
+            </div>
+
+            <div class="container-video-csv" style="display: none;">
+              <canvas id="cvs" class="csv" style='display:inline-block;width: 100%;'></canvas>
+            </div>
+
+            <div id="container-images" class="container-images">
+               
+            </div>
+
+
+    </div>
+
+
+    <div id="myModal" class="modal">
+
+        <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="img-container-modal">
+
+        </div>
+        </div>
+    
+    </div>
+   
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="javascript.js"></script>
+
+</body>
+</html>
